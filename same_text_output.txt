@@ -1,0 +1,19 @@
+﻿=== Part 1: print element by element with %c ===
+char:               MAI304
+short:              MAI304
+int:                MAI304
+unsigned long long: MAI304
+
+=== sizeof comparison ===
+char a[6]               : sizeof(array) =  6, sizeof(element) = 1
+short b[6]              : sizeof(array) = 12, sizeof(element) = 2
+int c[6]                : sizeof(array) = 24, sizeof(element) = 4
+unsigned long long d[6] : sizeof(array) = 48, sizeof(element) = 8
+
+=== Part 2: try %s after adding '\0' ===
+char:               "MAI304"
+short:              "M"
+int:                "M"
+unsigned long long: "M"
+
+First 8 bytes of int array c0 (hex): 4D 00 00 00 41 00 00 00
