@@ -1,0 +1,19 @@
+﻿=== const vs #define ===
+BUFFER_SIZE (macro)       = 304
+buffer_size (const object) = 304
+address of buffer_size     = 00007FF7A2F74010
+
+=== BAD_SQUARE vs GOOD_SQUARE ===
+BAD_SQUARE(2 + 3)  = 11  (expands to 2 + 3 * 2 + 3)
+GOOD_SQUARE(2 + 3) = 25  (expands to ((2 + 3) * (2 + 3)))
+
+=== side effects: GOOD_SQUARE(i++) (UNDEFINED BEHAVIOR) ===
+i = 3; GOOD_SQUARE(i++) -> result = 12, i = 5  (do NOT rely on this)
+
+=== stringify and token pasting ===
+STRINGIFY(hello)  = hello
+STRINGIFY(2 + 3)  = 2 + 3
+CONCAT(value, 304) -> variable value304 = 7
+
+=== conditional compilation ===
+compiled WITHOUT -DDEBUG
