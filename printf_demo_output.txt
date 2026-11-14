@@ -1,0 +1,17 @@
+﻿=== 7.1 printf specifiers ===
+decimal = 304, octal = 460, hex = 130, HEX = 130
+%u  unsigned int   : 304
+%c  character      : M
+%s  C string       : MAI304
+%f  floating point : 3.141590
+%zu size_t         : 4
+%p  pointer        : 0000006A9FBFFC1C
+
+=== 7.2 escape sequences ===
+AAA	BBB
+first
+SECOND
+one
+quote: "C" and slash: \
+apostrophe: 'x'
+line1line2
