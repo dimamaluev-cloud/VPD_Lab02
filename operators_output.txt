@@ -1,0 +1,18 @@
+﻿=== 1. Tokens: a+++b and b---a ===
+a+++b : a=5, b=3 -> result = 8, a after = 6, b after = 3
+b---a : a=4, b=10 -> result = 6, a after = 4, b after = 9
+
+=== 2. Safe expressions (precedence) ===
+2 + 3 * 4            = 14
+(2 + 3) * 4          = 20
+1 << 2 + 1           = 8
+(1 << 2) + 1         = 5
+5 < 3 == 0           = 1
+6 & 2 == 2           = 0
+(6 & 2) == 2         = 1
+6 ^ 3                = 5
+1 || 0 && 0          = 1
+(1 || 0) && 0        = 0
+
+=== 3. a = b++ + ++b  (UNDEFINED BEHAVIOR) ===
+b = 5; a = b++ + ++b; -> a = 12, b = 7  (do NOT rely on this)
