@@ -1,0 +1,98 @@
+﻿=== Part A: UNINITIALIZED arrays (indeterminate values, UB) ===
+chars[0..9]    : 16 0 0 0 0 0 0 0 0 0
+integers[0..9] : 989438288 381 1814458424 32758 1814433808 32758 134177545 -298041344 1483 -1891811328
+reals[0..9]    : 1.37215e-313 1.9582e-306 6.23055e-307 8.90107e-307 1.20162e-306 1.86921e-306 6.23038e-307 1.60219e-306 1.1126e-306 6.23057e-307
+
+=== Part B: INITIALIZED arrays ===
+
+-- integers (one per line) --
+integers[0] = 0
+integers[1] = 1
+integers[2] = 4
+integers[3] = 9
+integers[4] = 16
+integers[5] = 25
+integers[6] = 36
+integers[7] = 49
+integers[8] = 64
+integers[9] = 81
+integers[10] = 100
+integers[11] = 121
+integers[12] = 144
+integers[13] = 169
+integers[14] = 196
+integers[15] = 225
+integers[16] = 256
+integers[17] = 289
+integers[18] = 324
+integers[19] = 361
+integers[20] = 400
+integers[21] = 441
+integers[22] = 484
+integers[23] = 529
+integers[24] = 576
+
+-- reals (one per line) --
+reals[0] = 0.00
+reals[1] = 0.50
+reals[2] = 1.00
+reals[3] = 1.50
+reals[4] = 2.00
+reals[5] = 2.50
+reals[6] = 3.00
+reals[7] = 3.50
+reals[8] = 4.00
+reals[9] = 4.50
+reals[10] = 5.00
+reals[11] = 5.50
+reals[12] = 6.00
+reals[13] = 6.50
+reals[14] = 7.00
+reals[15] = 7.50
+reals[16] = 8.00
+reals[17] = 8.50
+reals[18] = 9.00
+reals[19] = 9.50
+reals[20] = 10.00
+reals[21] = 10.50
+reals[22] = 11.00
+reals[23] = 11.50
+reals[24] = 12.00
+
+-- chars (10 per row) --
+A B C D E F G H I J 
+K L M N O P Q R S T 
+U V W X Y Z A B C D 
+E F G H I J K L M N 
+O P Q R S T U V W X 
+Y Z A B C D E F G H 
+I J K L M N O P Q R 
+S T U V W X Y Z A B 
+C D E F G H I J K L 
+M N O P Q R S T U V 
+W X Y Z A B C D E F 
+G H I J K L M N O P 
+Q R S T U V W X Y Z 
+A B C D E F G H I J 
+K L M N O P Q R S T 
+U V W X Y Z A B C D 
+E F G H I J K L M N 
+O P Q R S T U V W X 
+Y Z A B C D E F G H 
+I J K L M N O P Q R 
+S T U V W X Y Z A B 
+C D E F G H I J K L 
+M N O P Q R S T U V 
+W X Y Z A B C D E F 
+G H I J K L M N O P 
+Q R S T U V W X Y Z 
+A B C D E F G H I J 
+K L M N O P Q R S T 
+U V W X Y Z A B C D 
+E F G H I J K L M N 
+O P Q R 
+
+-- sizes --
+chars:    sizeof(array) = 304, sizeof(element) = 1, count = 304
+integers: sizeof(array) = 100, sizeof(element) = 4, count = 25
+reals:    sizeof(array) = 200, sizeof(element) = 8, count = 25
